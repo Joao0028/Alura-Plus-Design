@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+    --branco-principal: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal) ;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("Imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    height: 82vh;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    text-decoration: none;
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container__botao_2{
+    background-color: transparent;
+    color: var(--branco-principal);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1em;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+.dois{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+.titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.imagem{
+    margin: 1em 0 2em 0;
+}
+
+.caixa{
+    margin: 0 6em;
+}
+
+.secundario{
+    width: 80%;
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__descricao{
+    color: var(--cinza-secundario);
+}
+
+.terciario{
+    align-items: center;
+    margin: 0 6em;
+}
+
+.descricao__combo{
+    color: var(--cinza-secundario);
+    margin: 0 0 2em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.botao__combo{
+    padding: 1em;
+    background: var(--botao-azul);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+.combo{
+    margin: 0 3em;
+}
+
+.quarto{
+    align-items: center;
+    margin: 0 6em;
+}
+
+.cursos__titulo{
+    font-size: 48px;
+}
+
+.cursos__descricao{
+    font-size: 16px;
+    color: var(--cinza-secundario);
+}
+
+
+.quinto{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 0vh;
+   
+}
+.container__imagem{
+    text-align: center;
+    margin: 0 123px;
+}
+
+.alura{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+}
+.lista__item{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0 ;
+    list-style: none
+}
+
+.imgs{
+    margin: 0 30px;
+}
+
+.rodape img{
+    display: flex;
+    margin: auto;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 60px 0 45px;
+}
+.lista__link{
+    margin: 0 50px;
+}
+.lista__link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-size: 16px;
+}
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+.lista__link a:active{
+    color: var(--cinza-secundario);
+}
+
+.rodape__copy, .rodape__copyright{
+    color: var(--cinza-secundario);
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.rodape__copy{
+    margin: 0 0 40px 0;
+}
+
+
+
+/*Muito Importante: list-style: none - serve para retirar o efeito que aparece na lista "ul", o "." que atrapalha... */
+/*Muito Importante: colocar margin na div dentro da section pode definir o tamanho que quero que ocupe... */
+/*Muito Importante: "text-decoration: none;" - tira o "efeito" do botão, aquelas linhas que ficam em baixo entre outros... */
+/*Muito Importante: "padding: 1em;" - serve para aumentar o espaço interno entre o que tem dentro do background... */
+
+/*background-size: contain; - ele vai pegar todo o container e vai preencher ele, assim não vai sobrar espaços nas laterais "vazias"*/
+/*background-repeat: no-repeat; - serve para fazer com que a imagem não se repita...*/
+/*background-image: url("Imagens/Background.png"); - serve para adicionar uma imagem de fundo sem ter que colocar siretamente no "html" - Importante: "Se for uma imagem apenas "decorativa" é recomendado o background-image, agora se for uma iamgem irmportante ou que precise de contexto é mais recomendado colocar própio html"*/
+
+/* "*" - serve para definir o estilo que você quer para todos os "elementos"... mais ou menos isso...*/
+/*:root - serve para deixar mais facil de achar a cor que quer, sem precisar ter que colocar #ffff, para usar basta colocar dentro ex:"--cor-de-fundo: #00000;" e logo apos colocar a cor desejada dentro de ex: "background: var(--cor-de-fundo)" */
